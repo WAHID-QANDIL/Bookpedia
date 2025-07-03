@@ -7,6 +7,8 @@ fun main() = application {
     Window(
         onCloseRequest = ::exitApplication,
         title = "Bookpedia",
+        resizable = true,
+        alwaysOnTop = true
     ) {
         App()
     }
