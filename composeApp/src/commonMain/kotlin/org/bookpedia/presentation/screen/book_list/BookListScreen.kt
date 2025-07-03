@@ -58,60 +58,7 @@ fun BookListScreen(
 
     BookListScreenContent(
         modifier = modifier,
-        uiState = uiState.copy(searchResult = listOf<Book>(
-            Book(
-                id = "1",
-                title = "TODO()",
-                imageUrl = "TODO()",
-                authors = emptyList(),
-                description = "TODO()",
-                languages = emptyList(),
-                firstPublishedYear = "TODO()",
-                averageRating = 4.3,
-                ratingCount = 22,
-                numPages = 22,
-                numEditions = 1
-            ),
-            Book(
-                id = "2",
-                title = "TODO()",
-                imageUrl = "TODO()",
-                authors = emptyList(),
-                description = "TODO()",
-                languages = emptyList(),
-                firstPublishedYear = "TODO()",
-                averageRating = 4.3,
-                ratingCount = 22,
-                numPages = 22,
-                numEditions = 1
-            ),
-            Book(
-                id = "3",
-                title = "TODO()",
-                imageUrl = "TODO()",
-                authors = emptyList(),
-                description = "TODO()",
-                languages = emptyList(),
-                firstPublishedYear = "TODO()",
-                averageRating = 4.3,
-                ratingCount = 22,
-                numPages = 22,
-                numEditions = 1
-            )
-            ,Book(
-                id = "4",
-                title = "TODO()",
-                imageUrl = "TODO()",
-                authors = emptyList(),
-                description = "TODO()",
-                languages = emptyList(),
-                firstPublishedYear = "TODO()",
-                averageRating = 4.3,
-                ratingCount = 22,
-                numPages = 22,
-                numEditions = 1
-            )
-        )),
+        uiState = uiState.copy(searchResult = books),
         onAction = { action ->
             when (action) {
                 is BookListAction.OnBookClicked -> {

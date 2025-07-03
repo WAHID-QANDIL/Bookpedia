@@ -42,27 +42,3 @@ fun BookList(
 
 
 }
-
-
-val books = (1..100)
-    .map {
-    Book(
-        id = it.toString(),
-        title = it.toString(),
-        imageUrl = "",
-        authors = emptyList(),
-        description = "",
-        languages = emptyList(),
-        firstPublishedYear = "",
-        averageRating = 3.2,
-        ratingCount = 2,
-        numPages = 2,
-        numEditions = 2
-    )
-}
-
-@Preview
-@Composable
-private fun PreviewBookList() {
-
-}

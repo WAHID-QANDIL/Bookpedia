@@ -11,3 +11,19 @@ data class BookListState(
     val errorMessage: UiText? = null,
     val selectedTapIndex:Int = 0,
 )
+val books = (1..100)
+    .map {
+        Book(
+            id = it.toString(),
+            title = it.toString(),
+            imageUrl = "",
+            authors = emptyList(),
+            description = "",
+            languages = emptyList(),
+            firstPublishedYear = "",
+            averageRating = 3.2,
+            ratingCount = 2,
+            numPages = 2,
+            numEditions = 2
+        )
+    }

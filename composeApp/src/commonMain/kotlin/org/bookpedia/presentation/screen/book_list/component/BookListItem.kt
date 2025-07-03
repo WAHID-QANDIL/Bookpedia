@@ -16,6 +16,7 @@ import androidx.compose.foundation.shape.CornerSize
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.KeyboardArrowRight
+import androidx.compose.material.icons.filled.Star
 import androidx.compose.material3.CircularProgressIndicator
 import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
@@ -36,6 +37,7 @@ import bookpedia.composeapp.generated.resources.Res
 import bookpedia.composeapp.generated.resources.book_image_placeholder
 import coil3.compose.rememberAsyncImagePainter
 import org.bookpedia.core.presentation.LightBlue
+import org.bookpedia.core.presentation.SandYellow
 import org.bookpedia.domain.model.Book
 import org.jetbrains.compose.resources.painterResource
 import org.jetbrains.compose.ui.tooling.preview.Preview
@@ -140,11 +142,11 @@ fun BookListItem(
                             style = MaterialTheme.typography.bodyLarge
                         )
                         Icon(
-                            imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                            imageVector = Icons.Default.Star,
                             contentDescription = null,
-                            modifier = Modifier.size(36.dp)
+                            modifier = Modifier.size(36.dp),
+                            tint = SandYellow
                         )
-
 
                     }
 
@@ -153,6 +155,11 @@ fun BookListItem(
 
             }
 
+            Icon(
+                imageVector = Icons.AutoMirrored.Filled.KeyboardArrowRight,
+                contentDescription = null,
+                modifier = Modifier.size(36.dp)
+            )
         }
 
     }
