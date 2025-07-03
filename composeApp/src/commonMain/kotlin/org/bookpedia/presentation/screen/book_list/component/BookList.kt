@@ -13,7 +13,6 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import org.bookpedia.domain.model.Book
-import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable
 fun BookList(
