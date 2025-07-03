@@ -16,11 +16,12 @@ junit = "4.13.2"
 kotlin = "2.2.0"
 kotlinx-coroutines = "1.10.2"
 koin = "4.1.0"
-ktor = "3.2.0"
+ktor = "3.1.0"
 
 ksp = "2.0.21-1.0.28"
 sqlite = "2.5.0-alpha11"
 room = "2.7.2"
+coil3 = "3.2.0"
 
 [libraries]
 kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
@@ -49,6 +50,15 @@ ktor-auth = { module = "io.ktor:ktor-client-auth", version.ref = "ktor" }
 ktor-client-content-negotiation = { module = "io.ktor:ktor-client-content-negotiation", version.ref = "ktor" }
 ktor-serialization-kotlinx-json = { module = "io.ktor:ktor-serialization-kotlinx-json", version.ref = "ktor" }
 
+#coil-ktor2 = {module = "io.coil-kt.coil3:coil-network-ktor2", version.ref = "coil3" }
+coil-ktor3 = {module = "io.coil-kt.coil3:coil-network-ktor3", version.ref = "coil3" }
+coil-compose-core = {module = "io.coil-kt.coil3:coil-compose-core", version.ref = "coil3" }
+coil-compose = {module = "io.coil-kt.coil3:coil-compose", version.ref = "coil3" }
+coil-core = {module = "io.coil-kt.coil3:coil-core", version.ref = "coil3" }
+coil-multi-platform = { module = "io.coil-kt.coil3:coil", version.ref = "coil3" }
+
+
+
 [plugins]
 androidApplication = { id = "com.android.application", version.ref = "agp" }
 androidLibrary = { id = "com.android.library", version.ref = "agp" }
@@ -73,4 +83,11 @@ koin-common = [
     "koin-compose",
     "koin-compose-viewmodel",
     "koin-compose-viewmodel-navigation"
+]
+coil = [
+    "coil-ktor3",
+    "coil-compose",
+    "coil-compose-core",
+    "coil-core",
+    "coil-multi-platform",
 ]

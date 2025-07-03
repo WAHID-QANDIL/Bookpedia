@@ -8,6 +8,7 @@ plugins {
     alias(libs.plugins.composeMultiplatform)
     alias(libs.plugins.composeCompiler)
     alias(libs.plugins.composeHotReload)
+    alias(libs.plugins.jetbrains.kotlin.serialization)
 }
 
 kotlin {
@@ -53,6 +54,8 @@ kotlin {
             implementation(libs.koin.core)
             implementation(libs.bundles.ktor)
             implementation(libs.bundles.koin.common)
+            implementation(compose.materialIconsExtended)
+            implementation(libs.bundles.coil)
         }
         commonTest.dependencies {
             implementation(libs.kotlin.test)
